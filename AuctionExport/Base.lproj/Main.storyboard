@@ -7,7 +7,6 @@
         <!--Home-->
         <scene sceneID="vU1-Xd-1mI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qah-Fn-XBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="Vno-AK-rqw" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Zhl-Zt-up2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -27,6 +26,7 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Home" id="Y8j-8g-JS8"/>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qah-Fn-XBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968" y="357"/>
         </scene>
