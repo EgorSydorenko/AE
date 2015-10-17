@@ -5,25 +5,30 @@
     </dependencies>
     <scenes>
         <!--Home-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="vU1-Xd-1mI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AuctionExport" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qah-Fn-XBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="Vno-AK-rqw" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Zhl-Zt-up2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="zcC-dS-NDY"/>
-                    <navigationItem key="navigationItem" id="Jhg-ZB-1Rk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wCn-cL-7X7">
+                            <size key="itemSize" width="293" height="77"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vno-AK-rqw" id="fcM-8H-bWA"/>
+                            <outlet property="delegate" destination="Vno-AK-rqw" id="ZT1-kX-Kzt"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Home" id="Y8j-8g-JS8"/>
+                </collectionViewController>
             </objects>
-            <point key="canvasLocation" x="968" y="343"/>
+            <point key="canvasLocation" x="968" y="357"/>
         </scene>
         <!--Test-->
         <scene sceneID="R3L-A1-435">
@@ -76,14 +81,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="QDv-6B-yHl"/>
+                        <segue destination="Vno-AK-rqw" kind="relationship" relationship="viewControllers" id="T4G-wC-9oZ"/>
                         <segue destination="3up-qF-l7P" kind="relationship" relationship="viewControllers" id="1BV-zo-pz5"/>
                         <segue destination="QtW-Yt-FG7" kind="relationship" relationship="viewControllers" id="egn-bU-pN2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsN-yk-WEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="1090"/>
+            <point key="canvasLocation" x="188" y="1090"/>
         </scene>
         <!--Profile-->
         <scene sceneID="drq-eL-uE8">
