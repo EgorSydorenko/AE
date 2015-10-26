@@ -15,6 +15,8 @@
 		74F38D411BD232A000B27000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F38D3F1BD232A000B27000 /* LaunchScreen.storyboard */; };
 		74F38D4C1BD232A100B27000 /* AuctionExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F38D4B1BD232A100B27000 /* AuctionExportTests.swift */; };
 		74F38D571BD232A100B27000 /* AuctionExportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F38D561BD232A100B27000 /* AuctionExportUITests.swift */; };
+		9295F9471BD3D4CD00FF04D1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F9461BD3D4CD00FF04D1 /* LogInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9295F94F1BD3D9B100FF04D1 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F94E1BD3D9B100FF04D1 /* ProfileNavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		74F38D521BD232A100B27000 /* AuctionExportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuctionExportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F38D561BD232A100B27000 /* AuctionExportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionExportUITests.swift; sourceTree = "<group>"; };
 		74F38D581BD232A100B27000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9295F9461BD3D4CD00FF04D1 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		9295F94E1BD3D9B100FF04D1 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		74F38D351BD232A000B27000 /* AuctionExport */ = {
 			isa = PBXGroup;
 			children = (
+				9295F94E1BD3D9B100FF04D1 /* ProfileNavigationController.swift */,
 				74F1F4371BD24880000F5BFB /* Main.storyboard */,
 				74F38D361BD232A000B27000 /* AppDelegate.swift */,
 				74F38D381BD232A000B27000 /* ViewController.swift */,
+				9295F9461BD3D4CD00FF04D1 /* LogInViewController.swift */,
 				74F38D3D1BD232A000B27000 /* Assets.xcassets */,
 				74F38D3F1BD232A000B27000 /* LaunchScreen.storyboard */,
 				74F38D421BD232A000B27000 /* Info.plist */,
@@ -195,6 +201,7 @@
 				TargetAttributes = {
 					74F38D321BD232A000B27000 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 7FWT4WJ8N2;
 					};
 					74F38D461BD232A100B27000 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -258,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9295F9471BD3D4CD00FF04D1 /* LogInViewController.swift in Sources */,
 				74F38D391BD232A000B27000 /* ViewController.swift in Sources */,
 				74F1F4341BD245D4000F5BFB /* SearchFilter.swift in Sources */,
 				74F38D371BD232A000B27000 /* AppDelegate.swift in Sources */,
+				9295F94F1BD3D9B100FF04D1 /* ProfileNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +409,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AuctionExport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorsydorenko.AuctionExport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -411,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AuctionExport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorsydorenko.AuctionExport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
